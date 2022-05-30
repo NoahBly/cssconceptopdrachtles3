@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:ital@1&display=swap');
+
+/*////////////////////////
+    Table of Contents
+    1. Global Styles
+    2. Typography
+    3. Layout
+        3.1 Reusables
+        3.2 Other
+    4. Areas
+        4.1 Header
+        4.2 Introduction
+        etc.
+    5. Media Queries
+////////////////////////*/
+
+/* ------------------------------- 1. Global Styles -------------------------------- */
+/*css-reset*/
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* ------------------------------- 2. Typography ----------------------------------- */
+h1,h2,h3,h4,h5,h6 {
+
+}
+/* ------------------------------- 3. Layout --------------------------------------- */
+
+/* --------------- 3.1 Reusables ----------------------- */
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border:  1px solid red;
+}
+
+.inner-container {
+    /*als flex item */
+    flex-basis: 1500px;
+    height: 350px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+
+    /*als flex container */
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+
+    border: 1px solid black;
+
+}
+.outer-container-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    border: 1px solid brown;
+
+}
+
+.inner-container-2 {
+    flex-basis: 800px;
+    height: 350px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 20px;
+
+    border: 1px solid red;
+}
+/* --------------- 3.2 Other --------------------------- */
+
+/* ------------------------------- 4. Areas ---------------------------------------- */
+
+/* --------------- 4.1 Header ------------------------- */
+
+    header {
+        background-color: palevioletred;
+
+    }
+
+.header-content{
+    margin: 20px 0;
+
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-basis: 350px;
+    margin: 20px 0;
+    border: 1px solid darkblue;
+}
+
+li {
+    padding: 0 30px;
+    margin-right: 30px;
+
+    list-style-type: none;
+}
+
+.article-begin{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+#h1-begin {
+    padding: 10px;
+}
+/* --------------- 4.2 Introduction ------------------- */
+
+/* ------------------------------- 5. Media Queries -------------------------------- */
